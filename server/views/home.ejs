@@ -34,16 +34,14 @@
           <div class="container">
             <h1 class="display-4">AlgoLAB</h1>
             <p class="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
+              AlgoLAB is a free API service for web developers and android developers. 
             </p>
             <hr class="my-4" />
             <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
+              It uses various advanced algorithms like dynamic programming, backtracking etc alongwith various mathematical techniques.
             </p>
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Learn more</a
+            <a class="btn btn-primary" href="/api" role="button"
+              >Explore</a
             >
           </div>
         </div>
@@ -51,6 +49,7 @@
         <div class="container my-4">
           <p id = "intro">Getting started</p>
           <div class="accordion" id="accordionExample">
+
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
@@ -63,7 +62,7 @@
                     aria-controls="collapseOne"
                   >
                     <span class="badge badge-success">GET</span>
-                    https://pingooapi/api/dummy
+                    https://algolab7.herokuapp.com/api/dummy
                   </button>
                 </h2>
               </div>
@@ -75,58 +74,26 @@
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve dummy data in
+                  JSON format. This route can be useful for testing API calls from your app, manipulating DOM, using list views in android etc.<br><br>
+                  e.g.- <br>
+                  [{
+                    _id: 1,
+                    name: "John Doe",
+                    age: 30,
+                    status: 'true'
+                  },
+                  {
+                      _id: 2,
+                      name: "Peter Parker",
+                      age: 26,
+                      status: 'true'
+                  }]
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    <span class="badge badge-success">GET</span>
-                    https://pingooapi/api/dummy/5
-                  </button>
-                </h2>
-              </div>
 
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordionExample"
-              >
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </div>
-              </div>
-            </div>
+
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
@@ -138,11 +105,12 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    <span class="badge badge-info">POST</span>
-                    https://pingooapi/api/love
+                    <span class="badge badge-success">GET</span>
+                    https://algolab7.herokuapp.com/api/dummy/7
                   </button>
                 </h2>
               </div>
+
               <div
                 id="collapseTwo"
                 class="collapse"
@@ -150,20 +118,21 @@
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve a single data object in
+                  JSON format. This route can be useful for testing API calls from your app, manipulating DOM, using single element views in android etc.<br><br>
+                  <span style="color: red;">*Please use the id in the range 1 to 10 only.</span><br><br>
+                  e.g.- <br>
+                  {
+                    _id: 7,
+                    name: "Thanos",
+                    age: 80,
+                    status: 'false'
+                  }
                 </div>
               </div>
             </div>
+
+
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
@@ -176,7 +145,7 @@
                     aria-controls="collapseThree"
                   >
                     <span class="badge badge-info">POST</span>
-                    https://pingooapi/api/luck
+                    https://algolab7.herokuapp.com/api/love
                   </button>
                 </h2>
               </div>
@@ -187,54 +156,90 @@
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name and also his/her
+                  partner's name. Internally server uses a dynamic programming approach to calculate the love percentage between the persons. 
+                  Returns the result in JSON format. <br><br>
+                  e.g.- 
+                  Request data - {"Person1": "Romeo", "Person2": "Juliet"} <br>
+                  Output - {
+                    "Percentage": 90,
+                    "Message": "Made for each other"
+                  }
                 </div>
               </div>
             </div>
+
+
             <div class="card">
-              <div class="card-header" id="headingThree">
+              <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
                   <button
                     class="btn btn-link collapsed"
                     type="button"
                     data-toggle="collapse"
-                    data-target="#collapseThree"
+                    data-target="#collapseFour"
                     aria-expanded="false"
-                    aria-controls="collapseThree"
+                    aria-controls="collapseFour"
                   >
                     <span class="badge badge-info">POST</span>
-                    https://pingooapi/api/string
+                    https://algolab7.herokuapp.com/api/luck
                   </button>
                 </h2>
               </div>
               <div
-                id="collapseThree"
+                id="collapseFour"
                 class="collapse"
-                aria-labelledby="headingThree"
+                aria-labelledby="headingFour"
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                  This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name and day. Internally server uses a dynamic programming approach to calculate the luck percentage of the person. 
+                  Returns the result in JSON format. <br><br>
+                  e.g.- 
+                  Request data - {"name": "John", "day": "Sunday"} <br>
+                  Output - {
+                    "Percentage": 75
+                  }
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <span class="badge badge-info">POST</span>
+                    https://algolab7.herokuapp.com/api/string
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  This route accepts POST requests only. It is a data manipulation API endpoint. Client will make a POST request on this route with a string. Internally server uses string manipulation approaches to generate various interesting results. 
+                  Returns the result in JSON format. <br><br>
+                  e.g.- 
+                  Request data - {"str": "Himanshu Kumar Mishra"} <br>
+                  Output - {
+                    "lower": "himanshu kumar mishra",
+                    "upper": "HIMANSHU KUMAR MISHRA",
+                    "character": 21,
+                    "vowels": 7,
+                    "consonants": 12,
+                    "space": 2
+                  }
                 </div>
               </div>
             </div>

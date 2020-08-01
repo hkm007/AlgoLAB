@@ -1,5 +1,5 @@
 {
-  "name": "love_calculator",
+  "name": "algolab",
   "version": "1.0.0",
   "description": "API which calculate percentage of love",
   "main": "app.js",

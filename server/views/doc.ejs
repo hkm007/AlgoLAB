@@ -30,10 +30,17 @@
     
     <main id="main">
         <div class = "container my-4">
-            <h2>Documentations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad neque voluptates tenetur nisi, sint mollitia facilis est! Ut obcaecati minus quos dolorem cum reprehenderit veniam autem velit hic rerum!</p>
+            <h2>Documentations</h2>
+            <p>
+              AlgoLAB uses varoious algorithmic paradigms like dynamic programming, backtracking etc.
+            </p><br>
+            <h5>Dynamic Programming</h5>
+            <p>Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial. For example, if we write simple recursive solution for Fibonacci Numbers, we get exponential time complexity and if we optimize it by storing solutions of subproblems, time complexity reduces to linear.</p>
+            </p><br>
+            <h5>Backtracking</h5>
+            <p>Backtracking is an algorithmic-technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time (by time, here, is referred to the time elapsed till reaching any level of the search tree).
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+              For example, consider the SudoKo solving Problem, we try filling digits one by one. Whenever we find that current digit cannot lead to a solution, we remove it (backtrack) and try next digit. This is better than naive approach (generating all possible combinations of digits and then trying every combination one by one) as it drops a set of permutations whenever it backtracks.</p>
         </div>
     </main>
 
