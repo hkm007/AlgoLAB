@@ -31,51 +31,100 @@
     <main id="main">
         <div class = "container my-4">
             <h2>APIs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad neque voluptates tenetur nisi, sint mollitia facilis est! Ut obcaecati minus quos dolorem cum reprehenderit veniam autem velit hic rerum!</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+            <p>
+              API is an abbreviation for Application Programming Interface which is a collection of communication protocols and subroutines used by various programs to communicate between them. A programmer can make use of various API tools to make its program easier and simpler. Also, an API facilitates the programmers with an efficient way to develop their software programs.
+Thus in simpler terms, an API helps two programs or applications to communicate with each other by providing them with necessary tools and functions. It takes the request from the user and sends it to the service provider and then again sends the result generated from the service provider to the desired user.
+            </p>
         </div>
 
         <div class = "container my-4">
           <h2>1. Dummy API</h2>
           <div class = "api-link">
-            <span class="badge badge-success">GET</span><a class = "pad-link">https://pingooapi/api/dummy</a>
+            <span class="badge badge-success">GET</span><a class = "pad-link">https://algolab7.herokuapp.com/api/dummy</a>
           </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+          <br>
+          <p>This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve dummy data in
+            JSON format. This route can be useful for testing API calls from your app, manipulating DOM, using list views in android etc.<br><br>
+            e.g.- <br>
+            [{
+              _id: 1,
+              name: "John Doe",
+              age: 30,
+              status: 'true'
+            },
+            {
+                _id: 2,
+                name: "Peter Parker",
+                age: 26,
+                status: 'true'
+            }]</p>
 
           <h4>1.a. Dummy API for a specific id</h4>
           <div class = "api-link">
-            <span class="badge badge-success">GET</span><a class = "pad-link">https://pingooapi/api/dummy/:id</a>
+            <span class="badge badge-success">GET</span><a class = "pad-link">https://algolab7.herokuapp.com/api/dummy/7</a>
           </div>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+          <br>
+          <p>This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve a single data object in
+            JSON format. This route can be useful for testing API calls from your app, manipulating DOM, using single element views in android etc.<br><br>
+            <span style="color: red;">*Please use the id in the range 1 to 10 only.</span><br><br>
+            e.g.- <br>
+            {
+              _id: 7,
+              name: "Thanos",
+              age: 80,
+              status: 'false'
+            }</p>
         </div>
 
         <div class = "container my-4">
           <h2>2. Love Calculator</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://pingooapi/api/love</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/love</a>
           </div>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+          <br>
+          <p>This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name and also his/her
+            partner's name. Internally server uses a dynamic programming approach to calculate the love percentage between the persons. 
+            Returns the result in JSON format. <br><br>
+            e.g.- 
+            Request data - {"Person1": "Romeo", "Person2": "Juliet"} <br>
+            Output - {
+              "Percentage": 90,
+              "Message": "Made for each other"
+            }</p>
         </div>
 
         <div class = "container my-4">
           <h2>3. Check your Luck today</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://pingooapi/api/luck</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/luck</a>
           </div>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+          <br>
+          <p>This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name and day. Internally server uses a dynamic programming approach to calculate the luck percentage of the person. 
+            Returns the result in JSON format. <br><br>
+            e.g.- 
+            Request data - {"name": "John", "day": "Sunday"} <br>
+            Output - {
+              "Percentage": 75
+            }</p>
         </div>
         <div class = "container my-4">
           <h2>4. String Features</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://pingooapi/api/string</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/string</a>
           </div>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum maxime dolores repudiandae, nisi mollitia neque ratione, autem fugiat sunt esse atque praesentium sint animi totam illo illum. Eaque, optio!</p>
+          <br>
+          <p>This route accepts POST requests only. It is a data manipulation API endpoint. Client will make a POST request on this route with a string. Internally server uses string manipulation approaches to generate various interesting results. 
+            Returns the result in JSON format. <br><br>
+            e.g.- 
+            Request data - {"str": "Himanshu Kumar Mishra"} <br>
+            Output - {
+              "lower": "himanshu kumar mishra",
+              "upper": "HIMANSHU KUMAR MISHRA",
+              "character": 21,
+              "vowels": 7,
+              "consonants": 12,
+              "space": 2
+            }</p>
         </div>
     </main>
 
