@@ -55,29 +55,23 @@ router.post('/api/love', (req, res) => {
 
 //api route for luck prediction
 router.post('/api/luck', (req, res) => {
-    const { name, day } = req.body
+    const { name } = req.body
 
-    if(!name || !day) {
-        return res.status(422).send({message: "Enter all details"})
+    if(!name) {
+        return res.status(422).send({message: "Enter a name"})
     }
 
-    if(typeof(name) !== "string" || typeof(day) !== "string") {
-        return res.status(422).send({message: "Enter proper details"})
+    if(typeof(name) !== "string") {
+        return res.status(422).send({message: "Name must be a string"})
     }
 
-    n = name.toLowerCase()
-    d = day.toLowerCase()
+    let cname = name.toLowerCase()
+    let revName = cname.split("").reverse().join("");
+    let lcs = LCS(cname, name.length, revName, name.length)
 
-    let count = 0
+    let lps = name.length - lcs;
 
-    for(let i = 0; i < n.length; i++) {
-        for(let j = 0; j < d.length; j++) {
-            if(n[i] === d[j]) count++;
-        }
-    }
-
-    let size = Math.min(n.length, d.length)
-    let percent = Math.round((count/size)*100)
+    let percent = Math.round((lps/name.length)*100)
 
     const result = {
         "Percentage": percent
