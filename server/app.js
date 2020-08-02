@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
 const bodyParser = require('body-parser')
 const apiRoute = require('./routes/api')
 const pageRoute = require('./routes/page')
@@ -8,6 +9,9 @@ const port = process.env.PORT || 5000
 
 // public
 app.use(express.static(BASE_DIR + 'public/')); 
+
+// cors
+app.use(cors());
 
 // parser
 app.use(bodyParser.urlencoded({ extended: false }))

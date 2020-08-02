@@ -1,16 +1,16 @@
 {
   "name": "algolab",
   "version": "1.0.0",
-  "description": "API which calculate percentage of love",
+  "description": "API service",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "hkm007",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.3"
