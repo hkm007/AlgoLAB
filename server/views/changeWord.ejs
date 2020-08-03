@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />    
+    <title>AlgoLAB | Change Word</title>
+  </head>
+  <body>
+    <%- include('includes/navbar') %>
+    
+    <main id="main">
+        <div class = "container my-4">
+            <h2>Change Word</h2>
+            <p>
+              Given a dictionary, and two words ‘start’ and ‘target’ (both of same length). Find length of the smallest chain from ‘start’ to ‘target’ if it exists, such that adjacent words in the chain only differ by one character and each word in the chain is a valid word i.e., it exists in the dictionary. It may be assumed that the ‘target’ word exists in dictionary and length of all dictionary words is same.
+              <br><br>
+              Dictionary = {POON, PLEE, SAME, POIE, PLEA, PLIE, POIN}<br>
+              start = TOON<br>
+              target = PLEA
+            </p>
+
+            <small style="color: red;">*Hint - One must have a concepts of graph algorithms</small><br>
+            <br>
+            <div class="card col-md-6">
+              <div class="card-body">
+                <div class="col-md-6">
+                  <input type="text" id="step" class="form-control" placeholder="Steps"><br>
+                  <button type="button" onclick="checkWin()" class="btn btn-primary">Check</button>
+                </div>
+                <div class="col-md-12 mt-3">
+                  <h4>Chances: <span id="chance"></span></h4>
+                  <h4>Message: <span id="win"></span></h4><br>
+                  <button type="button" onclick="location.reload()" class="btn btn-success">Reset</button>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <%- include('includes/footer') %>
+
+    <script>
+      let count = 3;
+      let win = document.getElementById("win");
+      let chance = document.getElementById("chance");
+      chance.innerHTML = count;
+      win.innerHTML = "Let's play!"
+
+      function checkWin() {
+        let ans = document.getElementById("step").value;
+
+        if(count > 0) {
+          if(ans == "7") {
+            win.innerHTML = "You Won!"; 
+          } else {
+            win.innerHTML = "Try again";
+          }
+        } else if(count == 0) {
+          win.innerHTML = "Game Over";
+        }
+        if(count > 0) chance.innerHTML = --count;
+        else chance.innerHTML = 0;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />    
+    <title>AlgoLAB | Games</title>
+  </head>
+  <body>
+    <%- include('includes/navbar') %>
+    
+    <main id="main">
+        <div class = "container my-4">
+            <h2>Games</h2>
+            <p>
+              AlgoLAB has a very interesting games playground section with many games designed using different algorithmic approaches.
+            </p><br>
+            <div class="row">
+              <div class="card col-md-3 m-2">
+                <div class="card-body">
+                  <h3>N Queen</h3>
+                  <p>The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.</p>
+                  <a style="color: green;" href="/n-queen">Play</a><br>
+                  <a href="/docs">Read Docs</a>
+                </div>
+              </div>
+              <div class="card col-md-3 m-2">
+                <div class="card-body">
+                  <h3>Let's Guess!</h3>
+                  <p>Guess a number in minimum trials in a given range and a time limit in order to win the game. Let's see how strongly you guess!</p>
+                  <a style="color: green;" href="/guess">Play</a><br>
+                  <a href="/docs">Read Docs</a>
+                </div>
+              </div>
+              <div class="card col-md-3 m-2">
+                <div class="card-body">
+                  <h3>Change Word</h3>
+                  <p>Given a dictionary and two words, you have to convert the initial word to final word in minimum steps following the rule of the games.</p>
+                  <a style="color: green;" href="/change-word">Play</a><br>
+                  <a href="/docs">Read Docs</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('includes/footer') %>
+  </body>
+</html>

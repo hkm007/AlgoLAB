@@ -11,6 +11,11 @@ router.get("/api", (req,res) => {
     res.render("api.ejs");
 })
 
+// Games
+router.get("/games", (req,res) => {
+    res.render("game.ejs");
+})
+
 // Documentation
 router.get("/docs", (req,res) => {
     res.render("doc.ejs");

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />    
+    <title>AlgoLAB | N Queen</title>
+  </head>
+  <body>
+    <%- include('includes/navbar') %>
+    
+    <main id="main">
+        <div class = "container my-4">
+            <h2>N Queen</h2>
+            <p>
+              The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.<br>
+              Just select the four numbers depicted in the picture of board where you want to put the queens. Fill the form in the order of columns.<br>
+              e.g. - First Position is first column 
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQG_KDHkSlexV4gCl_vubTiHLoURtbPUVt-7Dkchu-fkCzTq7izrLnQWh4Yd0dINUUgkkH21Z7RQQTdANySaXPV430ivaqrT6UqoF4D&usqp=CAU&ec=45687379">
+            <br>
+            <small style="color: red;">*Hint - One must have a concepts of backtracking</small><br>
+            <br>
+            <div class="card col-md-6">
+              <div class="card-body">
+                <div class="col-md-12">
+                  <input type="text" id="pos1" class="form-control" placeholder="First Position"><br>
+                  <input type="text" id="pos2" class="form-control" placeholder="Second Position"><br>
+                  <input type="text" id="pos3" class="form-control" placeholder="Third Position"><br>
+                  <input type="text" id="pos4" class="form-control" placeholder="Fourth Position"><br>
+                  <button type="button" onclick="checkWin()" class="btn btn-primary">Check</button>
+                </div>
+                <div class="col-md-12 mt-3">
+                  <h4>Chances: <span id="chance"></span></h4>
+                  <h4>Message: <span id="win"></span></h4><br>
+                  <button type="button" onclick="location.reload()" class="btn btn-success">Reset</button>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <%- include('includes/footer') %>
+
+    <script>
+      let count = 3;
+      let win = document.getElementById("win");
+      let chance = document.getElementById("chance");
+      chance.innerHTML = count;
+      win.innerHTML = "Let's play!"
+
+      const win1 = ["5", "14", "3", "12"];
+      const win2 = ["9", "2", "15", "8"];
+
+      function help1(temp) {
+        for(let i = 0; i < temp.length; i++) {
+          if(temp[i] != win1[i]) return 0;
+        }
+        return 1;
+      }
+
+      function help2(temp) {
+        for(let i = 0; i < temp.length; i++) {
+          if(temp[i] != win2[i]) return 0;
+        }
+        return 1;
+      }
+
+      function checkWin() {
+        let pos1 = document.getElementById("pos1").value;
+        let pos2 = document.getElementById("pos2").value;
+        let pos3 = document.getElementById("pos3").value;
+        let pos4 = document.getElementById("pos4").value;
+
+        let temp = []
+        temp.push(pos1)
+        temp.push(pos2)
+        temp.push(pos3)
+        temp.push(pos4)
+
+        if(count > 0) {
+          if(help1(temp) == 1) {
+            win.innerHTML = "You Won!"; 
+          } else if(help2(temp) == 1) {
+            win.innerHTML = "You Won!"; 
+          } else {
+            win.innerHTML = "Try again";
+          }
+        } else if(count == 0) {
+          win.innerHTML = "Game Over";
+        }
+        if(count > 0) chance.innerHTML = --count;
+        else chance.innerHTML = 0;
+      }
+    </script>
+  </body>
+</html>
