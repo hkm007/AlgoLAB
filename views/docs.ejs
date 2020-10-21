@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" href="./css/api.css" />
-    <title>AlgoLAB | APIs</title>
+    <title>AlgoLAB | Docs</title>
   </head>
   <body>
     <%- include('includes/navbar') %>
@@ -40,7 +40,7 @@ Thus in simpler terms, an API helps two programs or applications to communicate 
         <div class = "container my-4">
           <h2>1. Dummy API</h2>
           <div class = "api-link">
-            <span class="badge badge-success">GET</span><a class = "pad-link">https://algolab7.herokuapp.com/api/dummy</a>
+            <span class="badge badge-success">GET</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/dummy</a>
           </div>
           <br>
           <p>This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve dummy data in
@@ -61,7 +61,7 @@ Thus in simpler terms, an API helps two programs or applications to communicate 
 
           <h4>1.a. Dummy API for a specific id</h4>
           <div class = "api-link">
-            <span class="badge badge-success">GET</span><a class = "pad-link">https://algolab7.herokuapp.com/api/dummy/7</a>
+            <span class="badge badge-success">GET</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/dummy/7</a>
           </div>
           <br>
           <p>This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve a single data object in
@@ -75,11 +75,31 @@ Thus in simpler terms, an API helps two programs or applications to communicate 
               status: 'false'
             }</p>
         </div>
+        
+        <div class = "container my-4">
+          <h2>2. Fact API</h2>
+          <div class = "api-link">
+            <span class="badge badge-success">GET</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/fact</a>
+          </div>
+          <br>
+          <p>This route accepts GET requests only. Once a client makes a request to this endpoint he/she will recieve fact data in
+            JSON format. This route can be useful for testing API calls from your app, manipulating DOM, using list views in android etc.<br><br>
+            e.g.- <br>
+            [{
+                _id: 1,
+                fact: "The first computer programmer was a female, named Ada Lovelace."
+            },
+            {
+                _id: 2,
+                fact: "The first virus was created in 1983."
+            }]
+          </p>
+        </div>
 
         <div class = "container my-4">
-          <h2>2. Love Calculator</h2>
+          <h2>3. Love Calculator</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/love</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/love</a>
           </div>
           <br>
           <p>This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name and also his/her
@@ -94,9 +114,9 @@ Thus in simpler terms, an API helps two programs or applications to communicate 
         </div>
 
         <div class = "container my-4">
-          <h2>3. Check your Luck today</h2>
+          <h2>4. Check your Luck today</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/luck</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/luck</a>
           </div>
           <br>
           <p>This route accepts POST requests only. It is a fun API endpoint. Client will make a POST request on this route with his/her name. Internally server uses a dynamic programming approach to calculate the luck percentage of the person. 
@@ -108,9 +128,9 @@ Thus in simpler terms, an API helps two programs or applications to communicate 
             }</p>
         </div>
         <div class = "container my-4">
-          <h2>4. String Features</h2>
+          <h2>5. String Features</h2>
           <div class = "api-link">
-            <span class="badge badge-info">POST</span><a class = "pad-link">https://algolab7.herokuapp.com/api/string</a>
+            <span class="badge badge-info">POST</span><a class = "pad-link">https://myalgolab.herokuapp.com/api/string</a>
           </div>
           <br>
           <p>This route accepts POST requests only. It is a data manipulation API endpoint. Client will make a POST request on this route with a string. Internally server uses string manipulation approaches to generate various interesting results. 

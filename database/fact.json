@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "_id": 1,
+            "fact": "The first computer programmer was a female, named Ada Lovelace."
+        },
+        {
+            "_id": 2,
+            "fact": "The first game was created in 1961. Fun facts are that it didn’t earn any money."
+        },
+        {
+            "_id": 3,
+            "fact": "The first virus was created in 1983."
+        },
+        {
+            "_id": 4,
+            "fact": "The first computer “bug” was identified in1947 as a dead moth."
+        },
+        {
+            "_id": 5,
+            "fact": "The first computer was actually a loom called the Jacquard loom, an automated, mechanical loom, which didn’t use any electricity."
+        },
+        {
+            "_id": 6,
+            "fact": "The first high-level (very close to real English that we use to communicate) programming language was FORTRAN. invented in 1954 by IBM’s John Backus."
+        },
+        {
+            "_id": 7,
+            "fact": "The language name C because it succeeds another language called B."
+        },
+        {
+            "_id": 8,
+            "fact": "Java was called as Oak from the name of that tree that grew outside the window of James Gosling."
+        },
+        {
+            "_id": 9,
+            "fact": "Guido van Rossum was also reading the published scripts from “Monty Python’s Flying Circus”, a BBC comedy series from the 1970s. Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language Python."
+        },
+        {
+            "_id": 10,
+            "fact": "The Java mascot, ‘The Duke’ was created by Joe Palrang. Palrang is the same guy who has worked on the Hollywood blockbuster, Shrek. Duke is celebrated at Oracle."
+        },
+        {
+            "_id": 11,
+            "fact": "Perl is sometimes known as the “Swiss-Army knife” of programming languages."
+        },
+        {
+            "_id": 12,
+            "fact": "Did you know first computer bug was named due to a real bug as shown in below pic? Grace Hopper recorded the first computer ‘bug’ in the book as she was working for the MARK II computer."
+        },
+        {
+            "_id": 13,
+            "fact": "1 Mbps and 1 MBps internet connection don’t mean the same thing."
+        },
+        {
+            "_id": 14,
+            "fact": "A coder is a person who transforms cola & pizza to code."
+        },
+        {
+            "_id": 15,
+            "fact": "A programmer is not a PC repairman."
+        }
+    ]
+}

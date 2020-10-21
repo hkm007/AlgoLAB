@@ -18,3 +18,11 @@
 .navbar-col{
     background-color: black;
 }
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: silver !important;
+}
